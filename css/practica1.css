@@ -1,0 +1,197 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color:#6f6f6f ;
+}
+
+h1{
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 40px;
+}
+
+h3{
+    padding: 20px;
+}
+
+.titulo>img{
+    width: 50%;
+}
+.titulo{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+.menu>ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu>ul>li>a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu>ul>li{
+    padding: 20px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 20px;
+}
+
+.menu>ul>li:hover{
+    background-color: #55a8fd;
+    margin: 8px;
+    transition: all 500ms;
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: 20px auto;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(4, auto);
+
+	grid-template-areas: "header header header"
+						 "contenido contenido sidebar"
+						 "widget-1 widget-1 sidbar"
+						 "footer footer footer";
+}
+
+.contenedor > div,
+.contenedor .header,
+.contenedor .contenido,
+.contenedor .sidebar,
+.contenedor .footer {
+	background: #fff;
+	padding: 30px;
+	border-radius: 10px;
+}
+
+.photoshop{
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+}
+
+.contenedor .header {
+	background: #12203E;
+	color: #fff;
+	grid-area: header;
+}
+
+.contenedor .contenido {
+	grid-area: contenido;
+}
+
+.contenedor .sidebar {
+	grid-column: 3 / 4;
+	background: #fAA43D;
+	text-align: center;
+	/* display: flex;
+	align-items: center;
+	justify-content: center; */
+	min-height: 100px;
+	grid-area: sidebar;
+}
+
+.practicas>li{
+    line-height: 35px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 15px;
+}
+
+.practicas>li>a{
+    text-decoration: none;
+    color: black;
+}
+
+.contenido>p{
+    text-align: justify;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 20px;
+
+}
+
+.contenido>h1, .contenido>h3{
+    text-align: center;
+}
+
+.contenedor .widget-1 {
+	/* background: #55a8fd; */
+	color: #fff;
+	height: 210px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    padding: 100px;
+}
+
+.contenedor .widget-1{
+    background-image: url(../Imagenes/Dioses/TEZCATLIPOCA.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.contenedor .widget-1 {
+	grid-area: widget-1;
+}
+
+.img2{
+    background-image: url(../Imagenes/Practica\ 1\ TEZCATLIPOCA.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    max-width: 100%;
+
+    resize: horizontal;
+    overflow: hidden;
+}
+
+.img2::before{
+    content: "\2B0C";
+    font-size: 30px;
+    background: rgba(0,0,0,0.7);
+    height: 100%;
+    line-height: 800px;
+    
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+}
+
+textarea{
+    opacity: 0;
+    width: 50px;
+    height: 10px;
+    position: relative;
+    top: 50%;
+
+    transform: scaleY(30);
+    cursor: e-resize;
+}
+
+.contenedor .footer {
+	background: #12203E;
+	color: #fff;
+	grid-area: footer;
+}
+
+@media screen and (max-width: 768px){
+	.contenedor {
+		grid-template-areas: "header header header"
+						 "contenido contenido contenido"
+						 "sidebar sidebar sidebar"
+						 "widget-1 widget-1 widget-1"
+						 "footer footer footer";
+	}
+}
