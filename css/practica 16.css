@@ -1,18 +1,19 @@
 .contenedor .widget-1{
-    background-image: url(../Imagenes/Original/Practica\ 4\ mundo.png);
+    background-image: url(../Imagenes/Original/1648387477216.jpg);
     background-repeat: no-repeat;
     position: relative;
-    /* background-position: 50% 0%; */
+    background-position: 50% 0%;
 }
 
 .img2{
-    background-image: url(../Imagenes/Photoshop/Practica\ 4\ mundo.png);
+    background-image: url(../Imagenes/Photoshop/Practica\ 16\ Quetzalcoatl.png);
     background-repeat: no-repeat;
-    /* background-position: 50% 0%; */
+    background-position: 50% 0%;
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
+    min-width: 30px;
     max-width: 100%;
 
     resize: horizontal;
