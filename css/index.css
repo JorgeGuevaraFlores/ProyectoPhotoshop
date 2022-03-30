@@ -12,6 +12,12 @@ h1{
     font-family: 'Dela Gothic One', cursive;
     font-size: 40px;
 }
+
+h3{
+	font-family: 'Dela Gothic One', cursive;
+	font-size: 20px;
+}
+
 .titulo>img{
     width: 50%;
 }
@@ -131,7 +137,7 @@ h1{
 }
 
 .contenedor .widget-1{
-    background-image: url(../Imagenes/Practica\ 1\ TEZCATLIPOCA.png);
+    background-image: url(../Imagenes/Photoshop/Practica\ 1\ TEZCATLIPOCA.png);
 }
 
 .contenedor .widget-1 {
@@ -139,7 +145,7 @@ h1{
 }
 
 .contenedor .widget-2{
-    background-image: url(../Imagenes/Practica\ 9\ Chalchiuhtlicue.png);
+    background-image: url(../Imagenes/Photoshop/Practica\ 9\ Chalchiuhtlicue.png);
     background-position: 50% -30px;
 }
 
@@ -167,9 +173,10 @@ h1{
 	.contenedor {
 		grid-template-areas: "header header header"
 						 "contenido contenido contenido"
-						 "sidebar sidebar sidebar"
 						 "widget-1 widget-1 widget-1"
                          "widget-2 widget-2 widget-2"
+						 "sidebar sidebar sidebar"
 						 "footer footer footer";
 	}
+
 }

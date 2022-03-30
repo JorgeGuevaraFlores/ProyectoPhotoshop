@@ -1,0 +1,25 @@
+.contenedor {grid-template-areas: "header header header"
+						 "contenido contenido sidebar"
+						 "widget-1 widget-1 sidbar"
+						 "footer footer footer";
+}
+.contenedor .widget-1{
+    background-image: url(../Imagenes/Original/tonatiuh.png);
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: 50% 0%;
+}
+
+.img2{
+    background-image: url(../Imagenes/Photoshop/Practica\ 2\ tonatiuh.png);
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    max-width: 100%;
+
+    resize: horizontal;
+    overflow: hidden;
+}

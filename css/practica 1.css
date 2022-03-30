@@ -8,11 +8,13 @@ body {
 }
 
 h1{
+    padding: 20px;
     font-family: 'Dela Gothic One', cursive;
     font-size: 40px;
 }
 
 h3{
+    font-family: 'Dela Gothic One', cursive;
     padding: 20px;
 }
 
@@ -70,7 +72,7 @@ h3{
 .contenedor .sidebar,
 .contenedor .footer {
 	background: #fff;
-	padding: 30px;
+	padding: 20px;
 	border-radius: 10px;
 }
 
@@ -190,8 +192,9 @@ textarea{
 	.contenedor {
 		grid-template-areas: "header header header"
 						 "contenido contenido contenido"
+                         "widget-1 widget-1 widget-1"
 						 "sidebar sidebar sidebar"
-						 "widget-1 widget-1 widget-1"
 						 "footer footer footer";
 	}
+
 }
