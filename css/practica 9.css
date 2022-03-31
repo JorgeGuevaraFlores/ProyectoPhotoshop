@@ -1,20 +1,20 @@
-.contenedor .widget-1{
-    background-image: url(../Imagenes/Original/Chalchiuhtlicue.jpg);
-    background-repeat: no-repeat;
-    position: relative;
-    /* background-position: 50% 0%; */
+.contenedor .widget-1 {
+  background-image: url(../Imagenes/Original/Chalchiuhtlicue.jpg);
+  background-repeat: no-repeat;
+  position: relative;
+  /* background-position: 50% 0%; */
 }
 
-.img2{
-    background-image: url(../Imagenes/Photoshop/Practica\ 9\ Chalchiuhtlicue.png);
-    background-repeat: no-repeat;
-    /* background-position: 50% 0%; */
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    max-width: 100%;
+.img2 {
+  background-image: url(../Imagenes/Photoshop/Practica\ 9\ Chalchiuhtlicue.png);
+  background-repeat: no-repeat;
+  /* background-position: 50% 0%; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  max-width: 100%;
 
-    resize: horizontal;
-    overflow: hidden;
+  resize: horizontal;
+  overflow: hidden;
 }

@@ -9,50 +9,58 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=M+PLUS+Rounded+1c:wght@500&family=Oxygen&family=Pacifico&family=Ubuntu+Mono:wght@700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../css/practica 1.css">
-    <link rel="stylesheet" href="../css/practica 9.css">
-    <title> Chalchiuhtlicue </title>
+    <link rel="stylesheet" href="../css/contacto.css">
+    <title>Contacto</title>
 </head>
 
 <body>
     <div class="contenedor">
         <header class="header">
             <div class="titulo">
-                <img src="../Imagenes/Photoshop/Azteca.png" alt="Cultura Azteca">
+            <img src="../Imagenes/Photoshop/Azteca.png" alt="Cultura Azteca">
                 <h1>Cultura Azteca</h1>
                 <img src="../Imagenes/Photoshop/Practico 18 Titulo.png" alt="">
             </div>
             <div class="menu">
                 <ul>
                     <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="Contacto.php">Datos de Contacto</a></li>
+                    <li><a href="Contacto.html">Datos de Contacto</a></li>
                     <li><a href="Ubicacion.html">Mapa de ubicación</a></li>
                 </ul>
             </div>
         </header>
 
         <main class="contenido">
-            <h1>Chalchiuhtlicue</h1>
-            <h3> (Práctica 9 Extrusion cúbica)</h3>
+            <h1>Contacto</h1>
             <p>
-                Para los aztecas este dios era el rey de los fenómenos atmosféricos y el espíritu de las montañas, así
-                que su poder era digno de grandes honores y sacrificios tanto de animales como de seres humanos pues la
-                comunidad dependía del buen desempeño de estos para la prosperidad de su agricultura.
-
-                Además se cuenta que Tláloc es el esposo de la diosa Chalchiuhtlicue a quien se reconoce como deidad del
-                agua y del amor, la belleza y las aguas de ríos, lagos, tormentas, mares, protectora de los navegantes y
-                patrona del bautismo.
-
-                Tláloc y Chalchiuhtlicue tuvieron muchos hijos a quienes se les llamaba tlalocas, que son las nubes del
-                cielo. <br><br>
-                Tláloc guardaba el agua en ollas, como si fueran una matriz plena de líquido vital. Esta olla de
-                cerámica policromada, muestra los rasgos iconográficos más sobresalientes y característicos de esta
-                deidad. Porta grandes orejeras rectangulares con un pendiente al centro. Lleva sobre su cabeza un tocado
-                con salientes en color blanco, que al parecer representan los cerros, donde el dios guardaba el agua. El
-                color azul, presente en casi toda la vasija, es atributo del agua y en particular de este dios. En su
-                interior se encontraron conchas de madreperla y cuentas de piedra verde, símbolos del agua preciosa.
-                <br><br>
+                Esta página fue realizada por <b>Guevara Flores Jorge</b>, con las tecnologías de <b>HTML5, JavaScript,
+                    CSS y PHP</b>. Mostrando las prácticas que se han realizado durante este semestre en Photoshop, cabe
+                recalcar que las prácticas 10 y 15 son personales, debido que no se ajustaban a la temática de la
+                página. <br><br>
+                Si quieres tener contacto directo conmigo, llena el siguiente formulario y lo más pronto posible me
+                pondré en contacto contigo. <br><br>
             </p>
+
+            <form id="formulario" name="formulario" method="post" action="../php/correo.php" onsubmit="return preguntar()"  >
+                <h1 id="titulo_formulario">Contacto para trabajo</h1>
+                <input type="text" name="nombre" placeholder="Nombre" id="nombre" maxlength="20">
+                <input type="text" name="ap" placeholder="Apellido Paterno" id="ap" maxlength="20">
+                <input type="text" name="am" placeholder="Apellido Materno" id="am" maxlength="20">
+                <input type="email" name="correo" placeholder="Correo" id="correo" maxlength="50">
+                <input type="tel" name="telefono" placeholder="Teléfono 55-55-55-55-55" id="telefono" maxlength="10"
+                    minlength="10" pattern="[0-9]+">
+                <textarea name="mensaje" placeholder="Escriba aqui su mensaje" id="mensaje"></textarea>
+                <input type="submit" value="Enviar" id="btn-enviar">
+            </form>
+
+            <br><br>
+            <p style="text-align: center;"><b>Sigueme en:</b></p> <br><br>
+
+            <div class="redesSociales">
+                <a href="https://www.facebook.com/jorge.guevara.35977" target="_blank">
+                    <center><img src="../Imagenes/Redes Sociales/facebook.png" alt="Facebook"></center>
+                </a>
+            </div>
         </main>
         <aside class="sidebar">
             <h1 class="photoshop">Prácticas de Photoshop</h1>
@@ -77,16 +85,13 @@
                 <li><a href="Practica 18.html">Practica 18</a></li>
             </ul>
         </aside>
-        <div class="widget-1">
-            <div class="img2">
-                <textarea readonly></textarea>
-            </div>
-        </div>
         <footer class="footer">
             <h3>&#9400 Jorge Guevara Flores</h3>
             <img src="../Imagenes/unam.png" alt="UNAM">
         </footer>
     </div>
+
+    <script src="../javascript/formulario.js"></script>
 </body>
 
 </html>
