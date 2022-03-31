@@ -187,6 +187,19 @@ h3 {
   width: 50%;
 }
 
+/* Responsive */
+
+@media screen and (max-width: 460px){
+  .titulo>img{
+    width: 100%;
+  }
+
+  .titulo>h1{
+    font-size: 30px;
+  }
+
+}
+
 @media screen and (max-width: 768px) {
   .contenedor {
     grid-template-areas:

@@ -41,7 +41,7 @@
                 pondré en contacto contigo. <br><br>
             </p>
 
-            <form id="formulario" name="formulario" method="post" action="../php/correo.php" onsubmit="return preguntar()"  >
+            <form id="formulario" name="formulario" method="post" action="../php/correo.php""  >
                 <h1 id="titulo_formulario">Contacto para trabajo</h1>
                 <input type="text" name="nombre" placeholder="Nombre" id="nombre" maxlength="20">
                 <input type="text" name="ap" placeholder="Apellido Paterno" id="ap" maxlength="20">
@@ -92,6 +92,7 @@
     </div>
 
     <script src="../javascript/formulario.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>

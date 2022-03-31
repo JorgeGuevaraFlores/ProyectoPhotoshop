@@ -27,3 +27,32 @@
   resize: horizontal;
   overflow: hidden;
 }
+
+/* Responsive */
+
+@media screen and (max-width: 460px){
+  .titulo>img{
+    width: 100%;
+  }
+
+  .titulo>h1{
+    font-size: 30px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .contenido{
+    margin: 0;
+    padding: 0;
+  }
+  .contenedor {
+    grid-template-areas:
+      "header header header"
+      "contenido contenido contenido"
+      "widget-1 widget-1 widget-1"
+      "sidebar sidebar sidebar"
+      "footer footer footer";
+  }
+}
